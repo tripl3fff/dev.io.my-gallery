@@ -1,0 +1,185 @@
+/* variables */
+:root {
+  --text-profile: #4e5150;
+  --text-profile-location: #a9a9a9;
+  --box-status: #e5e5e5;
+}
+
+/* css reset */
+* {
+  box-sizing: border-box;
+}
+body,
+p,
+ul,
+li,
+a {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+button {
+  border: 0;
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+/* base styles */
+body {
+  display: flex;
+  font-family: 'Montserrat', sans-serif;
+  flex-direction: column;
+  margin: 20px;
+}
+
+/* mobile styles */
+header .profile {
+  margin: auto;
+  width: 100%;
+  text-align: center;
+}
+
+.profile img {
+  border-radius: 35%;
+  width: 105px;
+  
+}
+
+.profile .profile-name {
+  margin: 5px 0 5px;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.profile .profile-location {
+  font-size: 10px;
+}
+
+header .profile-status {
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+  margin: 10px auto;
+}
+
+.box-status {
+  background-color: #e5e5e5;
+  border-radius: 12px;
+  cursor: default;
+  flex-direction: column;
+  font-size: 12px;
+  margin-left: 10px;
+  padding: 10px;
+  text-align: center;
+  width: 80px;
+}
+
+.box-status p:first-child {
+  font-weight: 600;
+}
+
+.content {
+  margin: 0 auto;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-areas:
+    'photo1 photo2 photo2'
+    'photo3 photo3 photo4'
+    'photo5 photo6 photo4';
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(3, 100px);
+  justify-items: center;
+}
+
+.content img {
+  border-radius: 10px;
+  width: 100%;
+}
+
+.photo1 {
+  grid-area: photo1;
+}
+
+.photo2 {
+  grid-area: photo2;
+}
+
+.photo3 {
+  grid-area: photo3;
+}
+
+.photo4 {
+  grid-area: photo4;
+}
+
+.photo5 {
+  grid-area: photo5;
+}
+
+.photo6 {
+  grid-area: photo6;
+}
+
+@media screen and (min-width: 620px) {
+  .profile .profile-name {
+    font-size: 20px;
+  }
+
+  .profile .profile-location {
+    font-size: 12px;
+  }
+
+  .profile img {
+    border-radius: 35%;
+    width: 145px;
+  }
+
+  .box-status {
+    width: 120px;
+    font-size: 16px;
+  }
+
+  .content {
+    grid-template-columns: repeat(3, 200px);
+    grid-template-rows: repeat(3, 200px);
+    margin: 25px auto;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .profile .profile-name {
+    font-size: 24px;
+  }
+
+  .profile .profile-location {
+    font-size: 14px;
+  }
+
+  .profile img {
+    border-radius: 35%;
+    width: 175px;
+  }
+
+  .box-status {
+    width: 120px;
+    font-size: 18px;
+  }
+  
+  .content {
+    grid-template-columns: repeat(3, 275px);
+    grid-template-rows: repeat(3, 275px);
+    margin: 25px auto;
+  }
+}
