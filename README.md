@@ -8,11 +8,11 @@
 
 <div align="center">
   <h3>
-    <a href="https://github.com/tripl3fff/dev.io.my-gallery">
+    <a href="https://tripl3fff.github.io/dev.io.my-gallery/">
       Demo
     </a>
     <span> | </span>
-    <a href="https://tripl3fff.github.io/dev.io.my-gallery/">
+    <a href="https://github.com/tripl3fff/dev.io.my-gallery">
       Solution
     </a>
     <span> | </span>
